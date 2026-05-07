@@ -9,7 +9,7 @@ public class AppRunner {
 
     private final UniversalArray<Product> products = new UniversalArrayImpl<>();
 
-    private final CoinAcceptor coinAcceptor;
+    private final PaymentAcceptor coinAcceptor;
 
     private static boolean isExit = false;
 
@@ -22,7 +22,8 @@ public class AppRunner {
                 new Mars(ActionLetter.F, 80),
                 new Pistachios(ActionLetter.G, 130)
         });
-        coinAcceptor = new CoinAcceptor(100);
+       // coinAcceptor = new CoinAcceptor(100);
+        coinAcceptor = new BillAcceptor(100);
     }
 
     public static void run() {

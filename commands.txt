@@ -1,0 +1,9 @@
+git clone https://github.com/diptera300/vending_machine - склонировать репозиторий
+
+git checkout home_work_25 - переключиться на ветку homework
+
+git commit -m " " - сделать коммит
+
+git push - запушить изменения
+
+git merge master - смержить ветки
